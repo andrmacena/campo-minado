@@ -11,6 +11,7 @@ export default class App extends Component {
             <Text style={styles.instructions}>Tamanho da grade:
              {params.getRowsAmount()}x{params.getColumnsAmount()} </Text>
             <Field />
+            <Field mined/>
             <Field opened />
             <Field opened nearMines={1} />
             <Field opened nearMines={2} />
@@ -18,6 +19,8 @@ export default class App extends Component {
             <Field opened nearMines={6} />
             <Field opened mined />
             <Field opened mined exploded />
+            <Field flagged /> 
+           <Field flagged opened/>
          </View>
       )
    }
